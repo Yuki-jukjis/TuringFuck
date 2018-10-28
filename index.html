@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="main.js"></script>
+</head>
+<body>
+  <dl>
+    <dt>0</dt><dd>メモリを0にする。</dd>
+    <dt>1</dt><dd>メモリを1にする。</dd>
+    <dt>!</dt><dd>メモリの値を出力する。</dd>
+    <dt>?</dt><dd>メモリに入力値をセットする。</dd>
+    <dt>&lt;</dt><dd>ポインタを右に動かす。</dd>
+    <dt>&gt;</dt><dd>ポインタを左に動かす。</dd>
+    <dt>[</dt><dd>メモリの値が0なら対応する]まで進む。</dd>
+    <dt>]</dt><dd>メモリの値が0なら対応する[まで戻る。</dd>
+    <dt>＠</dt><dd>ブレークポイント</dd>
+  </dl>
+
+  <textarea id="source" rows="8" cols="80"></textarea><br>
+  入力: <input type="text" id="input" />
+  <input type="button" value="実行" id="run" />
+  <input type="button" value="ステップ実行" id="step" />
+  <input type="button" value="初期化" id="init" />
+  <pre id="result"></pre>
+</body>
+</html>
